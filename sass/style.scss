@@ -1,0 +1,112 @@
+@import "compass/reset";
+@import "compass/css3/transition";
+@import "compass/css3/text-shadow";
+ 
+body{
+  font-size: 22px;
+  background: rgb(27,27,27);
+  color: rgb(69,69,69);
+  font-family: helvetica;
+  font-size: 15px;
+} 
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   margin:0;padding:0;list-style:none;
+}
+
+img,
+#qclock{
+  width: 70%;
+  margin: 1.5em 0 0 15%;
+  display:inline;
+  float:left; 
+}
+
+#qclock{
+  padding: 1.5em 3em; 
+}
+ 
+#qclock span{
+  display:inline-block;
+  float:left;
+  margin: 0 0 1em 0;
+  font-family: helvetica;
+  font-weight: 300;
+  width: (100% / 11);
+  @include transition(color 0.2s ease-in);
+}
+
+#qclock.it .it,
+#qclock.is .is,
+#qclock.oclock .oclock,
+#qclock.one .one,
+#qclock.two .two,
+#qclock.three .three,
+#qclock.four .four,
+#qclock.five .five,
+#qclock.fiveto .fiveto,
+#qclock.six .six,
+#qclock.seven .seven,
+#qclock.eight .eight,
+#qclock.nine .nine,
+#qclock.ten .ten,
+#qclock.eleven .eleven,
+#qclock.twelve .twelve,
+#qclock.ten .ten,
+#qclock.tento .tento,
+#qclock.twenty .twenty,
+#qclock.twentyfive .twentyfive,
+#qclock.fourty .fourty,
+#qclock.quarter .quarter,
+#qclock.half .half,
+#qclock.past .past,
+#qclock.to .to,
+#qclock.fourty .fourty{
+  span{
+    color: rgb(255,255,255);
+    @include text-shadow(rgba(255,255,255, 0.2) 0 0 3px);
+  }
+}
+
+.change-time{
+  padding: 0 0 4em 0;
+  display:block;
+  clear:both;
+  font-size: 0.7em;
+  text-align: center;
+  color: #c2c2c2;
+    label{
+      display:block;
+      text-align: center;
+      margin: 0 0 1em 0;
+    }
+    input{
+      padding: 1em 2em;
+      background: #fff;
+      border:0;
+        &.submit{
+          background: #333;
+          color: #fff;
+          cursor: pointer;
+        }
+    }
+}
+
+footer{
+  position: fixed;
+  bottom:0;
+  left:0;right:0;
+  background: #000;
+    .container{
+      padding: 1em;
+      max-width: 1024px;
+      width: 100%;
+      margin: 0 auto;
+        *{
+          color: #fff;
+        } 
+    }
+}

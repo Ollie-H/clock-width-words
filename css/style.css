@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+body {
+  font-size: 22px;
+  background: #1b1b1b;
+  color: #454545;
+  font-family: helvetica;
+  font-size: 15px; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img,
+#qclock {
+  width: 70%;
+  margin: 1.5em 0 0 15%;
+  display: inline;
+  float: left; }
+
+#qclock {
+  padding: 1.5em 3em; }
+
+#qclock span {
+  display: inline-block;
+  float: left;
+  margin: 0 0 1em 0;
+  font-family: helvetica;
+  font-weight: 300;
+  width: 9.09091%;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in; }
+
+#qclock.it .it span,
+#qclock.is .is span,
+#qclock.oclock .oclock span,
+#qclock.one .one span,
+#qclock.two .two span,
+#qclock.three .three span,
+#qclock.four .four span,
+#qclock.five .five span,
+#qclock.fiveto .fiveto span,
+#qclock.six .six span,
+#qclock.seven .seven span,
+#qclock.eight .eight span,
+#qclock.nine .nine span,
+#qclock.ten .ten span,
+#qclock.eleven .eleven span,
+#qclock.twelve .twelve span,
+#qclock.ten .ten span,
+#qclock.tento .tento span,
+#qclock.twenty .twenty span,
+#qclock.twentyfive .twentyfive span,
+#qclock.fourty .fourty span,
+#qclock.quarter .quarter span,
+#qclock.half .half span,
+#qclock.past .past span,
+#qclock.to .to span,
+#qclock.fourty .fourty span {
+  color: white;
+  text-shadow: rgba(255, 255, 255, 0.2) 0 0 3px; }
+
+.change-time {
+  padding: 0 0 4em 0;
+  display: block;
+  clear: both;
+  font-size: 0.7em;
+  text-align: center;
+  color: #c2c2c2; }
+  .change-time label {
+    display: block;
+    text-align: center;
+    margin: 0 0 1em 0; }
+  .change-time input {
+    padding: 1em 2em;
+    background: #fff;
+    border: 0; }
+    .change-time input.submit {
+      background: #333;
+      color: #fff;
+      cursor: pointer; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000; }
+  footer .container {
+    padding: 1em;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto; }
+    footer .container * {
+      color: #fff; }
